@@ -34,7 +34,7 @@ app.post("/api/zhipu/deconstruct", async (req, res) => {
   }
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 20000);
+  const timeout = setTimeout(() => controller.abort(), 60000);
 
   try {
     const response = await fetch(ZHIPU_API_URL, {
