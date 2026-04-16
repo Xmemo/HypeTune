@@ -59,6 +59,14 @@ This project is pre-configured for **Vercel** cloud deployment:
    - `ZHIPU_API_KEY`: Your Zhipu AI API Key.
 4. Deploy. Vercel will automatically detect and deploy the Serverless Functions in the `api/` directory.
 
+### Option B: Render Backend + Vercel Frontend (Recommended)
+
+Since Vercel Hobby tier has a 10s timeout limit, if you encounter frequent "Request timeout" errors, we recommend deploying the backend to **Render**:
+
+1. **Render Deployment:** Create a new **Web Service** on Render. Set the start command to `npm start` and add the `ZHIPU_API_KEY` environment variable.
+2. **Copy URL:** Copy the URL provided by Render (e.g., `https://xxx.onrender.com`).
+3. **Frontend Link:** In your Vercel project settings, add the environment variable `VITE_BACKEND_API_BASE_URL` with your Render URL, then redeploy the frontend.
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.

@@ -58,6 +58,14 @@
 3. 在项目设置中添加环境变量：`ZHIPU_API_KEY`（填入你的智谱 AI Key）。
 4. 点击部署。Vercel 会自动识别 `api/` 目录下的 Serverless Functions 并完成上线。
 
+### 方案 B：Render 后端 + Vercel 前端 (推荐)
+
+由于 Vercel 免费版有 10 秒超时限制，如果你发现 AI 分析经常超时，请将后端部署到 **Render**：
+
+1. **Render 部署：** 在 Render 创建新的 **Web Service**，启动命令设为 `npm start`，并添加环境变量 `ZHIPU_API_KEY`。
+2. **复制地址：** 获取 Render 提供的 URL (例：`https://xxx.onrender.com`)。
+3. **前端关联：** 在 Vercel 项目设置中，添加环境变量 `VITE_BACKEND_API_BASE_URL`，值为你的 Render 地址，然后重新部署前端。
+
 ## 开源协议
 
 MIT 协议 - 详情请参阅 [LICENSE](LICENSE) 文件。

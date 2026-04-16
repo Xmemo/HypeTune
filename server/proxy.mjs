@@ -1,10 +1,12 @@
 import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 
 dotenv.config({ path: ".env.local" });
 dotenv.config();
 
 const app = express();
+app.use(cors());
 const PORT = Number(process.env.PROXY_PORT || process.env.PORT || 8787);
 const ZHIPU_API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
 const ZHIPU_MODEL = process.env.ZHIPU_MODEL || "glm-4.7-flash";
