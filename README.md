@@ -42,21 +42,22 @@
    ```
 
 3. 环境变量配置：
-   将 `.env.example` 复制为 `.env` 并配置你的 API Key。
+   将 `.env.example` 复制为 `.env.local` 并配置你的 API Key。
 
 4. 启动开发：
    ```bash
    npm run dev
    ```
 
-## 开发流程
+## 部署 (Deployment)
 
-1. **输入：** 定义你的声音目标或参考曲目。
-2. **分析：** 运行 4D 解构引擎。
-3. **优化：** 根据生成的蓝图，定制并微调提示词。
-4. **执行：** 将输出应用于你的 AI 创作工具或 DAW 工作流。
+本项目已适配 **Vercel** 云端部署：
+
+1. 将代码推送到 GitHub。
+2. 在 Vercel 控制台中导入该仓库。
+3. 在项目设置中添加环境变量：`ZHIPU_API_KEY`（填入你的智谱 AI Key）。
+4. 点击部署。Vercel 会自动识别 `api/` 目录下的 Serverless Functions 并完成上线。
 
 ## 开源协议
 
 MIT 协议 - 详情请参阅 [LICENSE](LICENSE) 文件。
-

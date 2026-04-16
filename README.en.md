@@ -49,14 +49,16 @@ The application serves as a bridge between **Auditory Instinct** and **Creative 
    npm run dev
    ```
 
-## Development Workflow
+## Deployment
 
-1. **Input:** Define the sonic target or inspiration track.
-2. **Analyze:** Run the 4D deconstruction engine.
-3. **Refine:** Build and customize prompts based on the generated blueprint.
-4. **Execute:** Use the outputs in your AI production or DAW workflow.
+This project is pre-configured for **Vercel** cloud deployment:
+
+1. Push the code to your GitHub repository.
+2. Import the repository into the Vercel dashboard.
+3. Add the following environment variable in the Vercel project settings:
+   - `ZHIPU_API_KEY`: Your Zhipu AI API Key.
+4. Deploy. Vercel will automatically detect and deploy the Serverless Functions in the `api/` directory.
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
-
