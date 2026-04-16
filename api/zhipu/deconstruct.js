@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   const ZHIPU_MODEL = process.env.ZHIPU_MODEL || "glm-4.7-flash";
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 60000); // 60s timeout for Vercel Pro/Local dev
+  const timeout = setTimeout(() => controller.abort(), 300000); // 300s deep diagnostic timeout
 
   try {
     const response = await fetch(ZHIPU_API_URL, {

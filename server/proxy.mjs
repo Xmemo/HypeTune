@@ -36,7 +36,7 @@ app.post("/api/zhipu/deconstruct", async (req, res) => {
   }
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 60000);
+  const timeout = setTimeout(() => controller.abort(), 300000); // 300s deep diagnostic timeout
 
   try {
     const response = await fetch(ZHIPU_API_URL, {

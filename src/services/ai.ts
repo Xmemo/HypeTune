@@ -22,8 +22,8 @@ export async function deconstructSong(songName: string, artistName: string, lang
 2. 搜索该曲目的专业乐评，寻找关于“和声走向”、“合成器音色型号”、“混响处理”的专家描述。尝试检索 Discogs, WhoSampled, 甚至 https://pudding.cool/ 上的深度音乐数据分析。
 3. 识别其历史地位及独特创新点。
 
-## Phase 2: 深度专业解构 (Analytical Decoding)
-基于搜索结果和音频常识，按以下四个维度进行结构化输出。请确保分析具有实质性内容，能够指导 Suno/Udio 生成。
+## Phase 2: 专业解构 (Analytical Decoding)
+基于搜索结果和音频常识，按以下四个维度进行精准的结构化分析。
 
 对于每个维度（Harmony, Rhythm, Texture, Arrangement），你需要提供：
 1. analysis (分析): 极度详细的拆解。
