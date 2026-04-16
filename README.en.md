@@ -1,0 +1,62 @@
+# HypeTune Lab
+
+A professional AI workspace for deconstructing musical intuition into structured creative blueprints and production signals.
+
+## Overview
+
+`HypeTune Lab` is a specialized environment for AI music creators and producers. It leverages large language models to analyze musical "vibes" and reverse-engineer them into actionable data across four key dimensions: **Harmony**, **Rhythm**, **Texture**, and **Arrangement**.
+
+## Core Concepts
+
+The application serves as a bridge between **Auditory Instinct** and **Creative Execution**:
+- **Sonic Deconstruction:** Analyzes the DNA of a track to identify why it works.
+- **Precision Prompting:** Converts abstract feelings into high-fidelity prompts for AI tools (Suno, Udio, etc.).
+- **Reference Mapping:** Identifies specific sonic targets for alignment and consistency.
+
+## Key Features
+
+- **4D Analysis Framework:** Systematic breakdown of music into core production elements.
+- **AI-Optimized Prompts:** Generates structured inputs for LLM-based music generation.
+- **Cross-Lingual Support:** Optimized for both English and Chinese creative workflows.
+- **Inspiration Mining:** Helps creators move from shallow imitation to informed production.
+
+## Tech Stack
+
+- **Frontend:** React + TypeScript
+- **Build System:** Vite
+- **Integrations:** AI Processing Engine (API-based)
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd hypetune-lab
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Setup environment variables:
+   Copy `.env.example` to `.env` and configure your API keys.
+
+4. Start development:
+   ```bash
+   npm run dev
+   ```
+
+## Development Workflow
+
+1. **Input:** Define the sonic target or inspiration track.
+2. **Analyze:** Run the 4D deconstruction engine.
+3. **Refine:** Build and customize prompts based on the generated blueprint.
+4. **Execute:** Use the outputs in your AI production or DAW workflow.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans SC", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-lab-bg: #060a0f;
+  --color-lab-card: #121b25;
+  --color-lab-border: #29384a;
+  --color-lab-accent: #3ae6b0;
+  --color-lab-accent-2: #f8b24e;
+  --color-lab-text: #edf4fb;
+  --color-lab-muted: #93a6ba;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(58, 230, 176, 0.12), transparent 35%),
+    radial-gradient(circle at 95% 10%, rgba(248, 178, 78, 0.1), transparent 40%),
+    linear-gradient(180deg, #060a0f 0%, #0b121a 50%, #060a0f 100%);
+  color: var(--color-lab-text);
+  font-family: var(--font-sans);
+  text-rendering: geometricPrecision;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(58, 230, 176, 0.25);
+  color: #f7fffc;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-lab-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-lab-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lab-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
